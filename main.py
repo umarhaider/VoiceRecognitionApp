@@ -51,10 +51,16 @@ def run_beep():
     elif 'launch surpass' in command:
         talk('Launching Surpass. Beep Boop')
         talk('Welcome to Surpass, your assessment friend. Beep Boop')
-        talk('Would you like to take a test or hear the results of a previous test. Beep Boop')
+        talk('Would you like to take a test or hear the results of a previous test? Beep Boop')
+        talk("Say 'one' for taking a test. And 'two' for results")
     else:
         talk('Error. Please say the command again. Beep Boop')
 
 
 while True:
+    command = take_command()
     run_beep()
+    if 'One' in command:
+        talk('Are you sure you would like to take a test?')
+    if 'two' in command:
+        talk('Are you sure you would like to hear the results of a previous test?')
