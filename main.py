@@ -61,6 +61,8 @@ while True:
     command = take_command()
     run_beep()
     if 'One' in command:
-        talk('Are you sure you would like to take a test?')
-    if 'two' in command:
-        talk('Are you sure you would like to hear the results of a previous test?')
+        talk('Are you sure you would like to take a test? Beep Boop')
+    elif 'two' in command:
+        talk('Are you sure you would like to hear the results of a previous test? Beep Boop')
+    else:
+        talk('You did not choose a correct option. Beep Boop')
